@@ -89,12 +89,13 @@ a{
 .container {
     height: calc(100% - 90px);
     overflow: auto;
+    padding: 1rem;
 }
 
 .row {
     display: flex;
 
-    background-color: plum;
+ 
 
     margin-bottom: 2rem;
     flex-wrap: wrap;
@@ -103,8 +104,7 @@ a{
 
 .col-12 {
     width: calc(100% / 12 * 2);
-    height: 250px;
-    background-color: grey;
+  
 }
 
 .card {
@@ -123,11 +123,36 @@ a{
     align-items: center;
 }
 
+.text-align-center{
+    text-align: center;
+}
+
 /* End Utilities */
 
-.title {
+.upgrade-bar{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.upgrade-btn{
+    border: 1px solid var(--spo-light);
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    
+}
+
+.upgrade-btn a{
     color: var(--spo-white);
-    padding-bottom: 1rem;
+}
+
+.category {
+    color: var(--spo-white);
+    padding: 1rem 0 1rem .5rem;
+}
+
+.category h5{
+    color: var(--spo-light);
+    padding: .5rem 0 1rem;
 }
 
 .filters {
@@ -135,6 +160,19 @@ a{
     padding: 1rem;
     gap: 1rem;
     flex-wrap: wrap;
+}
+
+.filters h6, .upgrade-btn{
+    font-size: .9rem;
+}
+
+.title h3{
+    color: white;
+    padding: 1rem 0 .5rem;
+}
+
+.subtitle{
+    color: var(--spo-light);
 }
 
 /* Responsive */
