@@ -31,6 +31,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 0 0 230px;
   
 }
 
@@ -74,14 +75,36 @@ body {
 
 .row{
     display: flex;
-    gap: 1rem;
+   
     background-color: plum;
-    padding: 1rem;
+  
     margin-bottom: 2rem;
+    flex-wrap: wrap;
+    
 }
 
 .col-12{
     width: calc(100% / 12 * 2);
     height: 250px;
     background-color: grey;
+}
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 700px) and (min-width: 601px) {
+    .col-12{
+        width: calc(100% /12 * 3);
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 401px) {
+    .col-12{
+        width: calc(100% /12 * 6);
+    }
+}
+
+@media screen and (max-width: 400px) and (min-width: 200px) {
+   .sidebar
 }
