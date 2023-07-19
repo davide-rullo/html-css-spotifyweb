@@ -46,7 +46,7 @@ img {
 }
 
 .principal {
-    width: 100%;
+    width: calc(100% - 230px);
     height: calc(100vh - 90px);
     background-color: var(--spo-primary);
 }
@@ -87,7 +87,7 @@ a{
 
 /* Utilities */
 .container {
-    height: calc(100vh - 180px);
+    height: calc(100% - 90px);
     overflow: auto;
 }
 
@@ -134,6 +134,7 @@ a{
     text-transform: uppercase;
     padding: 1rem;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 /* Responsive */
