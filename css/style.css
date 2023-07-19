@@ -18,3 +18,31 @@
 body {
     font-family: 'DM Sans', sans-serif;
 }
+
+.top{
+    display: flex;
+}
+
+.sidebar{
+    width: 230px;
+    height: calc(100vh - 90px);
+    background-color: var(--spo-black);
+    color: var(--spo-white);
+}
+
+.upgrade-bar{
+    height: 90px;
+
+    background-color: var(--spo-dark);
+}
+
+.principal{
+    width: 100vh;
+    height: calc(100vh - 90px);
+    background-color: var(--spo-primary);
+}
+
+.bottom{
+    height: 90px;
+    background-color: var(--spo-player);
+}
