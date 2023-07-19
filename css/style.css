@@ -19,11 +19,15 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
-.top{
+img {
+    max-width: 100%;
+}
+
+.top {
     display: flex;
 }
 
-.sidebar{
+.sidebar {
     width: 230px;
     height: calc(100vh - 90px);
     background-color: var(--spo-black);
@@ -32,79 +36,120 @@ body {
     flex-direction: column;
     justify-content: space-between;
     flex: 0 0 230px;
-  
+
 }
 
-.upgrade-bar{
+.upgrade-bar {
     height: 90px;
 
     background-color: var(--spo-dark);
 }
 
-.principal{
+.principal {
     width: 100%;
     height: calc(100vh - 90px);
     background-color: var(--spo-primary);
 }
 
-.bottom{
+.bottom {
     height: 90px;
     background-color: var(--spo-player);
 }
 
+p {
+    color: var(--spo-light);
+}
 
-.debug .menu, .debug .account {
+a{
+    text-decoration: none;
+    color: var(--spo-light);
+}
+
+/* Debug */
+.debug .menu,
+.debug .account {
     background-color: grey;
     margin: 1rem;
 
 }
 
-.debug .menu{
+.debug .menu {
     height: 500px;
-    
+
 }
 
-.debug .account{
+.debug .account {
     height: 50px;
 }
 
-.container{
+/* End Debug */
+
+
+/* Utilities */
+.container {
     height: calc(100vh - 180px);
     overflow: auto;
 }
 
-.row{
+.row {
     display: flex;
-   
+
     background-color: plum;
-  
+
     margin-bottom: 2rem;
     flex-wrap: wrap;
-    
+
 }
 
-.col-12{
+.col-12 {
     width: calc(100% / 12 * 2);
     height: 250px;
     background-color: grey;
 }
 
+.card {
+    padding: .5rem;
+}
 
+.d-flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+/* End Utilities */
+
+.title {
+    color: var(--spo-white);
+    padding-bottom: 1rem;
+}
+
+.filters {
+    text-transform: uppercase;
+    padding: 1rem;
+    gap: 1rem;
+}
 
 /* Responsive */
 
 @media screen and (max-width: 700px) and (min-width: 601px) {
-    .col-12{
+    .col-12 {
         width: calc(100% /12 * 3);
     }
 }
 
 @media screen and (max-width: 600px) and (min-width: 401px) {
-    .col-12{
+    .col-12 {
         width: calc(100% /12 * 6);
     }
 }
 
 @media screen and (max-width: 400px) and (min-width: 200px) {
-   .sidebar
+    .sidebar
 }
