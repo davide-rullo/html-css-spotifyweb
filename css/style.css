@@ -4,3 +4,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --spo-black: #000000;
+    --spo-white: #ffffff;
+    --spo-light: #a3a3a3;
+    --spo-dark: #080b12;
+    --spo-primary: #141922;
+    --spo-success: #adff2f;
+    --spo-player: #282828;
+
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
