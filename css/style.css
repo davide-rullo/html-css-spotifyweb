@@ -28,6 +28,10 @@ body {
     height: calc(100vh - 90px);
     background-color: var(--spo-black);
     color: var(--spo-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
 }
 
 .upgrade-bar{
@@ -45,4 +49,39 @@ body {
 .bottom{
     height: 90px;
     background-color: var(--spo-player);
+}
+
+
+.debug .menu, .debug .account {
+    background-color: grey;
+    margin: 1rem;
+
+}
+
+.debug .menu{
+    height: 500px;
+    
+}
+
+.debug .account{
+    height: 50px;
+}
+
+.container{
+    height: calc(100vh - 180px);
+    overflow: auto;
+}
+
+.row{
+    display: flex;
+    gap: 1rem;
+    background-color: plum;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.col-12{
+    width: calc(100% / 12 * 2);
+    height: 250px;
+    background-color: grey;
 }
