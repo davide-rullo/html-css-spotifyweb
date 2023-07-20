@@ -123,10 +123,17 @@ a{
     align-items: center;
 }
 
+.align-items-end{
+    align-items: end;
+}
+
 .text-align-center{
     text-align: center;
 }
 
+.flex-column{
+    flex-direction: column;
+}
 /* End Utilities */
 
 .upgrade-bar{
@@ -218,17 +225,22 @@ a{
   border-left: 1px solid var(--spo-success);
 }
 
-.menu i, .menu h4{
+.menu i, .menu h4, menu h3, .account h4{
     color: var(--spo-light);
 }
 
-.menu i {
+.home img, .account img {
     padding-right: .5rem;
-    line-height: .8;
 }
 
-.menu{
-    padding: ;
+.home img, .search img, .library img, .account img{
+    width: 30px;
+}
+
+
+
+.menu h4, .menu h3{
+    padding-left: .5rem;
 }
 
 .sidebar a{
@@ -236,18 +248,24 @@ a{
 }
 
 .home, .search, .library{
-    padding: .8rem 1rem;
+    padding: .2rem 1rem;
 }
 
 .playlist{
     padding: 2rem 1rem;
 }
 
-.home h4, .home i, .menu .activated {
+.playlist-menu{
+    align-items: start;
+    overflow: auto;
+    height: 220px;
+}
+
+.home h4, .home i, .menu .activated, .profile-row h4 {
     color: var(--spo-white);
 }
 
-.add{
+.add-btn{
     background-color: var(--spo-light);
     width: 40px;
     aspect-ratio: 1/1;
@@ -256,22 +274,140 @@ a{
     align-items: center;
     font-size: 2rem;
     color: var(--spo-black);
+    
 }
+
+.activated{
+   padding-bottom: 1rem;
+}
+
+.playlist-menu h4{
+    padding: 1rem 0 0.2rem;
+
+}
+
+.account{
+    padding: 1rem;
+}
+
+.profile{
+    width: 25px;
+    aspect-ratio: 1/1;
+    background-color: var(--spo-light);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile img{
+    width: 100%;
+    padding: 0;
+}
+.install{
+    padding-bottom: .5rem;
+}
+.profile-row{
+    padding-top: .5rem;
+}
+.profile-row h4{
+    padding-left: .5rem;
+}
+
+.search img, .library img, .install img {
+    filter: brightness(50%);
+}
+
+.home img{
+    filter: brightness(90%);
+}
+
+
+
+/* Mobile */
+.mobile-top, .mobile-bottom{
+    padding: .7rem;
+}
+
+.mobile-logo{
+    padding-bottom: 1rem;
+    filter: brightness(10000%);
+}
+
+.download{
+    width: 20px;
+}
+
+.mobile-home, .mobile-library{
+    padding-bottom: .5rem;
+}
+
+.circle{
+    padding-left: 2px;
+    padding-top: 1rem;
+}
+
 
 /* End Sidebar */
 
 
+
+/* Effects */
+
+.sidebar a:hover h4{
+    color: var(--spo-white);
+}
+
+.sidebar a:hover .add-btn{
+    background-color: white;
+}
+.sidebar a:hover .home img {
+    filter: brightness(150%);
+}
+
+.sidebar a:hover .search img {
+    filter: brightness(150%);
+}
+
+.sidebar a:hover .library img {
+    filter: brightness(150%);
+}
+
+.sidebar a:hover .install img {
+    filter: brightness(150%);
+}
+
+
+
+
+/* End Effects */
+
+
 /* Responsive */
+
+@media screen and (max-width: 2500px) {
+    .col-lg-2 {
+        width: calc(100% /12 * 2);
+    }
+    .mobile-top, .mobile-bottom{
+        display: none;
+    }
+}
 
 @media screen and (max-width: 1200px) {
     .col-lg-2 {
         width: calc(100% /12 * 3);
+    }
+    .mobile-top, .mobile-bottom{
+        display: none;
     }
 }
 
 @media screen and (max-width: 768px) {
     .col-md-3 {
         width: calc(100% /12 * 6);
+    }
+
+    .mobile-top, .mobile-bottom{
+        display: none;
     }
 }
 
@@ -283,4 +419,15 @@ a{
     .principal{
         width: calc(100% - 50px);
     }
+
+    .menu, .account{
+        display: none;
+    }
+
+    .mobile-top, .mobile-bottom{
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }
