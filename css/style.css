@@ -410,6 +410,10 @@ a{
     opacity: 1;
   }
 
+  .card:hover{
+    cursor: pointer;
+  }
+
 /* End Effects */
 
 
