@@ -35,7 +35,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 0 0 230px;
+  
 
 }
 
@@ -66,7 +66,7 @@ a{
 }
 
 /* Debug */
-.debug .menu,
+/* .debug .menu,
 .debug .account {
     background-color: grey;
     margin: 1rem;
@@ -81,7 +81,7 @@ a{
 .debug .account {
     height: 50px;
 }
-
+ */
 /* End Debug */
 
 
@@ -192,20 +192,95 @@ a{
     color: var(--spo-light);
 }
 
+
+/* Sidebar */
+
+.sidebar{
+   
+}
+
+.sidebar, .menu{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.logo{
+    padding: 1rem;
+ 
+}
+
+.logo img{
+    width: 80%;
+}
+
+.home {
+  border-left: 1px solid var(--spo-success);
+}
+
+.menu i, .menu h4{
+    color: var(--spo-light);
+}
+
+.menu i {
+    padding-right: .5rem;
+    line-height: .8;
+}
+
+.menu{
+    padding: ;
+}
+
+.sidebar a{
+    color: var(--spo-white);
+}
+
+.home, .search, .library{
+    padding: .8rem 1rem;
+}
+
+.playlist{
+    padding: 2rem 1rem;
+}
+
+.home h4, .home i, .menu .activated {
+    color: var(--spo-white);
+}
+
+.add{
+    background-color: var(--spo-light);
+    width: 40px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--spo-black);
+}
+
+/* End Sidebar */
+
+
 /* Responsive */
 
-@media screen and (max-width: 700px) and (min-width: 601px) {
-    .col-12 {
+@media screen and (max-width: 1200px) {
+    .col-lg-2 {
         width: calc(100% /12 * 3);
     }
 }
 
-@media screen and (max-width: 600px) and (min-width: 401px) {
-    .col-12 {
+@media screen and (max-width: 768px) {
+    .col-md-3 {
         width: calc(100% /12 * 6);
     }
 }
 
-@media screen and (max-width: 400px) and (min-width: 200px) {
-    .sidebar
+@media screen and (max-width: 576px) {
+    .sidebar{
+        width: 50px;
+    }
+    
+    .principal{
+        width: calc(100% - 50px);
+    }
 }
