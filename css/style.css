@@ -389,12 +389,17 @@ a{
     padding: 0 1rem;
 }
 
+
 .length h6{
     color: var(--spo-white);
 }
 
+.length{
+    width: 40vw;
+}
+
 .length-bar{
-    width: 20rem;
+    width: 100%;
 }
 
 .length-bar, .volume-bar{
@@ -403,7 +408,7 @@ a{
     
 }
 .volume-bar{
-    width: 8rem;
+  width: 5vw;
 }
 
 .minute{
@@ -417,7 +422,7 @@ a{
 .live-time, .live-volume{
 
     background-color: var(--spo-white);
-    width: 3rem;
+    width: 3vw;
     height: .3rem;
     border-radius: 15px;
 }
@@ -544,6 +549,12 @@ a{
     }
 }
 
+@media screen and (max-width: 800px){
+    .volume-bar, .cover {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .col-md-3 {
         width: calc(100% /12 * 6);
@@ -582,5 +593,29 @@ a{
         flex-direction: column;
     }
 
+    .controls{
+        font-size: .8rem;
+        gap: 1rem;
+        padding: 1rem .5rem;
+    }
+    .main-play{
+        padding: 0 .5rem;
+    }
+
+    .song{
+        padding-right: .5rem;
+    }
+    
+}
+
+@media screen and (max-width: 370px) {
+
+    .like{
+        display: none;
+    }
+
+    .settings{
+        gap: .5rem;
+    }
 
 }
