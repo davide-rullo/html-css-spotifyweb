@@ -394,15 +394,27 @@ a{
 }
 
 .length-bar{
-    background-color: var(--spo-light);
     width: 20rem;
+}
+
+.length-bar, .volume-bar{
+    background-color: var(--spo-light);
     border-radius: 15px;
     
 }
+.volume-bar{
+    width: 8rem;
+}
+
 .minute{
     padding: 0 1rem;
 }
-.live-time{
+
+.settings{
+    gap: 1rem;
+}
+
+.live-time, .live-volume{
 
     background-color: var(--spo-white);
     width: 3rem;
@@ -410,6 +422,11 @@ a{
     border-radius: 15px;
 }
 
+
+
+.settings{
+    color: var(--spo-white);
+}
 /* End Bottom */
 
 /* Mobile */
@@ -500,6 +517,10 @@ a{
     cursor: pointer;
   }
 
+  .song-name:hover h5{
+    color: var(--spo-white);
+    text-decoration: underline;
+  }
 /* End Effects */
 
 
@@ -530,6 +551,16 @@ a{
 
     .mobile-top, .mobile-bottom{
         display: none;
+    }
+
+    .like{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .fa-folder{
+        padding: .5rem 0 0;
     }
 }
 
