@@ -258,6 +258,14 @@ a{
     padding: .2rem 1rem;
 }
 
+.search h4{
+    padding-left: .7rem;
+}
+
+.library h4{
+    padding-left: .9rem;
+}
+
 .playlist{
     padding: 2rem 1rem;
 }
@@ -385,6 +393,10 @@ a{
     gap: 1.5rem;
 }
 
+.controls a{
+    color: var(--spo-white);
+}
+
 .main-play{
     padding: 0 1rem;
 }
@@ -400,6 +412,7 @@ a{
 
 .length-bar{
     width: 100%;
+    height: .3rem;
 }
 
 .length-bar, .volume-bar{
@@ -407,8 +420,21 @@ a{
     border-radius: 15px;
     
 }
+
+.handle{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--spo-white);
+    display: none;
+}
+
+
+
+
 .volume-bar{
   width: 5vw;
+  height: .3rem;
 }
 
 .minute{
@@ -526,6 +552,29 @@ a{
     color: var(--spo-white);
     text-decoration: underline;
   }
+  
+  .fa-heart:hover, .fa-folder:hover, .fa-list-ul:hover, .fa-display:hover, .fa-volume-high:hover {
+    color: var(--spo-white);
+  }
+
+  .length-bar:hover, .volume-bar:hover{
+    cursor: pointer;
+}
+
+.length-bar:hover .handle, .volume-bar:hover .handle{
+    display: flex;
+}
+
+.length-bar:hover .live-time, .volume-bar:hover .live-volume{
+    background-color: var(--spo-success);
+}
+
+.main-play:hover{
+    transform: scale(1.2);
+}
+
+
+
 /* End Effects */
 
 
@@ -610,7 +659,7 @@ a{
 
 @media screen and (max-width: 370px) {
 
-    .like{
+    .like, .queue{
         display: none;
     }
 
