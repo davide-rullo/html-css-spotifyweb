@@ -379,6 +379,36 @@ a{
     padding-left: .6rem;
 }
 
+.controls{
+    padding: .5rem 0 1.5rem;
+    color: var(--spo-white);
+    gap: 1.5rem;
+}
+
+.main-play{
+    padding: 0 1rem;
+}
+
+.length h6{
+    color: var(--spo-white);
+}
+
+.length-bar{
+    background-color: var(--spo-light);
+    width: 20rem;
+    border-radius: 15px;
+    
+}
+.minute{
+    padding: 0 1rem;
+}
+.live-time{
+
+    background-color: var(--spo-white);
+    width: 3rem;
+    height: .3rem;
+    border-radius: 15px;
+}
 
 /* End Bottom */
 
